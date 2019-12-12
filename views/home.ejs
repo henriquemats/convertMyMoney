@@ -1,8 +1,19 @@
 <%- include('header') %>
-  <form method="GET" action="/cotacao">
-    <input name="quotation" placeholder="Cotação dolar" value="<%= quotation %>"><br>
-    <input name="amount" placeholder="Quantidade dolares"><br>
-    <button>Converter!</button>
+  <form method="GET" action="/cotacao" id="form">
+    <div class="form-group">
+      <label for="formGroupExampleInput">Cotação dólar</label>
+      <input type="text" name="quotation" class="form-control" id="formGroupExampleInput" value="<%= quotation %>">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput">Quantidade de dólares</label>
+      <input type="text" name="amount" class="form-control" id="formGroupExampleInput">
+    </div>
+    <a href="#" class="btn btn-xs red">
+      <button>
+        <span class="fa fa-home"></span>
+        Converter
+      </button>
+    </a>
   </form>
 </section>
 <%- include('footer') %>
