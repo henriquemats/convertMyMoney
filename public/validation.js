@@ -11,7 +11,9 @@ $(document).ready(function() {
           }
       },
       messages: {
-          quotation: "Por favor, preencha a cotação de dólar",
+          quotation: {
+            required: "Por favor, preencha a cotação de dólar"
+          },
           amount: {
               required: "Por favor, preencha a quantidade de dólares",
           }
